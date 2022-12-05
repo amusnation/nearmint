@@ -27,7 +27,7 @@ export class Mint {
   }
 
   async nft_mint_one() {
-    const deposit = '6700000000000000000000';
+    const deposit = '16700000000000000000000';
     return await this.wallet.callMethod({ contractId: this.contractId, method: "nft_mint_one", args: {}, ONEF_TGAS, deposit });
   }
 
